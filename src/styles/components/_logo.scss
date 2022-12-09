@@ -1,0 +1,24 @@
+//---------------------LOGO--------------------------//
+.logo {
+  max-width: 1200px;
+  position: relative;
+  margin: 0 auto;
+  &_container {
+    position: absolute;
+    right: 0;
+    margin: 20px;
+  }
+
+  &_container img {
+    width: 35%;
+  }
+
+  @media (min-width: 750px) {
+    &_container {
+      margin: 50px 80px;
+    }
+    &_container img {
+      width: 20%;
+    }
+  }
+}

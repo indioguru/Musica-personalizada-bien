@@ -1,0 +1,134 @@
+.song {
+  background-color: $backgroundAll;
+  display: flex;
+  justify-content: center;
+  &_container {
+    height: 100vh;
+    .content_steps {
+      text-align: center;
+      padding-top: 100px;
+    }
+    .content_audio {
+      margin: 0 auto;
+      height: 80px;
+      max-width: 300px;
+      background: #ffffff26 0% 0% no-repeat padding-box;
+      border: 2px solid #b0a4a4;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0px 10px;
+      gap: 1rem;
+      img {
+        flex: 1 1 10%;
+        max-width: 40px;
+      }
+    }
+
+    #waveform {
+      flex: 1 1 80%;
+      align-self: center;
+    }
+
+    @media (hover: hover) {
+      .content_audio img:hover {
+        cursor: pointer;
+      }
+      #waveform:hover {
+        cursor: pointer;
+      }
+    }
+
+    .content_buttons {
+      text-align: center;
+      margin-top: 80px;
+      .content_a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 25px;
+      }
+      a {
+        text-align: center;
+        padding-top: 10px;
+        background: $Background-Color-button-one;
+        font-size: $font-size-buttons;
+        width: 100%;
+        height: $height-buttons;
+        max-width: $max-width-buttons;
+        font-family: $font-one-semibold;
+        color: white;
+        border: none;
+        border-radius: 50px;
+        text-decoration: none;
+      }
+
+      @media (hover: hover) {
+        a:hover {
+          background: white;
+          color: black;
+          cursor: pointer;
+        }
+      }
+
+      .button_two {
+        padding-bottom: 25px;
+      }
+    }
+  }
+
+  &_container h1 {
+    padding-top: 30px;
+    color: $letter-color-one;
+    font-family: $font-one;
+    font-size: 18px;
+    margin-bottom: 80px;
+  }
+
+  &_container h1 span {
+    color: $letter-color-one;
+    font-family: $font-one-regular;
+    font-weight: 100;
+    font-size: 15px;
+  }
+
+  @media (min-width: 750px) {
+    &_container h1 {
+      padding-top: 200px;
+      font-size: 20px;
+    }
+
+    &_container h1 span {
+      font-size: 20px;
+    }
+
+    &_container {
+      .content_audio {
+        max-width: 400px;
+        height: 110px;
+        margin: 0 auto;
+        border-radius: 40px;
+        img {
+          max-width: 60px;
+        }
+      }
+
+      .content_steps {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: -10px;
+      }
+      height: 100vh;
+      .content_buttons {
+        display: flex;
+        margin-top: 80px;
+      }
+
+      .content_buttons > * {
+        flex: 1 1 100%;
+      }
+    }
+  }
+}

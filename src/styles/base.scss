@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.containerAll {
+  width: 90%;
+  margin: 0px auto;
+  max-width: 1200px;
+}
+
+//---------------------Buttos--------------------------//
+
+.button_one {
+  text-align: center;
+}
+
+.button_one button {
+  background: $Background-Color-button-one;
+  font-size: $font-size-buttons;
+  width: 100%;
+  height: $height-buttons;
+  max-width: $max-width-buttons;
+  font-family: $font-one-semibold;
+  color: white;
+  border: none;
+  border-radius: 50px;
+}
+
+.button_two {
+  text-align: center;
+}
+
+.button_two button {
+  background: $Background-Color-button-two;
+  font-size: $font-size-buttons;
+  font-family: $font-one-semibold;
+  width: 100%;
+  height: $height-buttons;
+  max-width: $max-width-buttons;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  border: 1px gray solid;
+}
+
+@media (hover: hover) {
+  .button_one button:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
+  }
+
+  .button_two button:hover {
+    cursor: pointer;
+    background: transparent linear-gradient(99deg, #f62da89e 0%, #fc044178 100%)
+      0% 0% no-repeat padding-box;
+  }
+}
+
+//---------------------Input--------------------------//
+
+.input input {
+  width: 100%;
+  background: $background-color-inputs;
+  font-size: $font-size-inputs;
+  height: $height-inputs;
+  max-width: $max-width-inputs;
+  border: 2px $color-border-input solid;
+  padding: 10px;
+  color: white;
+  margin: 0 auto;
+}
+
+.input label {
+  color: $color-label;
+}
+
+//---------------------Fuentes--------------------------//
+@font-face {
+  font-family: "sans-mediun";
+  src: url("/assets/notoSans/noto-sans-medium.ttf") format("truetype"),
+    url("/assets/notoSans/noto-sans-medium/noto-sans-medium.eot")
+      format("eot"),
+    url("/assets/notoSans/noto-sans-medium/noto-sans-medium.woff")
+      format("woff"),
+    url("/assets/notoSans/noto-sans-medium/noto-sans-medium.woff2")
+      format("woff2");
+}
+
+@font-face {
+  font-family: "sans-bold";
+  src: url("/assets/notoSans/noto-sans-bold.ttf") format("truetype"),
+    url("/assets/notoSans/noto-sans-bold/noto-sans-bold.eot")
+      format("eot"),
+    url("/assets/notoSans/noto-sans-bold/noto-sans-bold.woff")
+      format("woff"),
+    url("/assets/notoSans/noto-sans-bold/noto-sans-bold.woff2")
+      format("woff2");
+}
+
+@font-face {
+  font-family: "sans-regular";
+  src: url("/assets/notoSans/noto-sans-regular.ttf") format("truetype"),
+    url("/assets/notoSans/noto-sans-regular/noto-sans-regular.eot")
+      format("eot"),
+    url("/assets/notoSans/noto-sans-regular/noto-sans-regular.woff")
+      format("woff"),
+    url("/assets/notoSans/noto-sans-regular/noto-sans-regular.woff2")
+      format("woff2");
+}
+
+@font-face {
+  font-family: "sans-semibold";
+  src: url("/assets/notoSans/noto-sans-semiBold.ttf") format("truetype"),
+    url("/assets/notoSans/noto-sans-semiBold/noto-sans-semiBold.eot")
+      format("eot"),
+    url("/assets/notoSans/noto-sans-semiBold/noto-sans-semiBold.woff")
+      format("woff"),
+    url("/assets/notoSans/noto-sans-semiBold/noto-sans-semiBold.woff2")
+      format("woff2");
+}
+
+//---------------------Steps--------------------------//
+
+.content_steps {
+  .content_circles {
+    display: flex;
+    justify-content: center;
+  }
+  .circle {
+    margin: 3px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: $background-color-step;
+    border: 1px $color-border-step solid;
+  }
+
+  @media (min-width: 750px) {
+    .circle {
+      margin: 5px;
+      width: 23px;
+      height: 23px;
+    }
+  }
+}
+
+.content_steps p {
+  color: $letter-color-one;
+  font-family: $font-one;
+}

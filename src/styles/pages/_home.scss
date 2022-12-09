@@ -1,0 +1,89 @@
+.home {
+  background-image: url("/Assets/fondo.png");
+  background-size: cover;
+  background-position: bottom 50% right 50%;
+  background-repeat: no-repeat;
+
+
+  &_container {
+    .content_info {
+      padding-top: 200px;
+    }
+
+    .content_info h1 {
+      color: $letter-color-one;
+      font-family: $font-one-bold;
+      font-size: 30px;
+    }
+
+    .content_info p {
+      color: $letter-color-two;
+      font-family: $font-one;
+      font-size: 16px;
+    }
+
+    @media (min-width: 750px) {
+      text-align: center;
+    }
+
+    .content_buttons button {
+      margin-bottom: 12px;
+    }
+
+    .content_buttons {
+      .button_one {
+        margin-top: 100px;
+      }
+
+      .button_two {
+        padding-bottom: 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 750px) {
+  .home {
+    width: 100%;
+    background-position: unset;
+    height: 100vh;
+    &_container {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .content_info {
+        padding-top: 0px;
+      }
+
+      .content_info h1 {
+        font-size: 50px;
+      }
+      .content_info p {
+        font-size: 25px;
+        margin-bottom: 50px;
+      }
+
+      .content_buttons {
+        display: flex;
+        gap: 5em;
+        margin: 0 auto;
+        justify-content: center;
+        .button_one {
+          margin-top: 0px;
+          text-align: end;
+        }
+
+        .button_two {
+          margin-bottom: 0px;
+          text-align: start;
+        }
+      }
+
+      .content_buttons > * {
+        flex-basis: 45%;
+      }
+    }
+  }
+}
